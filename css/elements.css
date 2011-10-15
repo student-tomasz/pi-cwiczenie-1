@@ -17,6 +17,23 @@ blockquote {
   padding-left: 1em;
 }
 
+span.large {
+  font-size: 200%;
+  font-variant: small-caps;
+}
+
+span.underlined {
+  text-decoration: underline;
+}
+
+span.striked {
+  text-decoration: line-through;
+}
+
+span.super_striked {
+  text-decoration: overline;
+}
+
 span.colourful {
   color: #df31a9;
 }

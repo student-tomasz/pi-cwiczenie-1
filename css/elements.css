@@ -1,0 +1,46 @@
+p.first {
+  text-align: left;
+}
+
+blockquote.second {
+  text-align: justify;
+}
+
+pre.third {
+  text-align: right;
+}
+
+blockquote {
+  border-left: solid 0.2em #ccc;
+  font-style: oblique;
+  margin-left: 0;
+  padding-left: 1em;
+}
+
+span.colourful {
+  color: #df31a9;
+}
+
+ol.first {
+  list-style-type: upper-roman;
+}
+
+ol.second {
+  list-style-type: lower-greek;
+}
+
+ol.second li:first-child {
+  value: 3;
+}
+
+ul.third {
+  list-style-type: square;
+}
+
+ul.fourth {
+  list-style-type: circle;
+}
+
+dt {
+  font-weight: bold;
+}

@@ -2,14 +2,31 @@
   width: 70em;
 }
 
-#aside {
-  float: left;
-  width: 30%;
+table#wrapper, table#wrapper td {
+  border: none;
+  margin: 0;
+  padding: 0;
 }
 
-#article {
+table#wrapper td#aside {
+  text-align: left;
+  vertical-align: top;
+  padding-right: 1em;
+  width: 21em;
+}
+
+table#wrapper td#article {
+  width: 48em;
+}
+
+div#aside {
+  float: left;
+  width: 21em;
+}
+
+div#article {
   float: right;
-  width: 67%;
+  width: 48em;
 }
 
 pre.code {

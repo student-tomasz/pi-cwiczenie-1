@@ -19,17 +19,26 @@
   </head>
   <body id="project_1_elements">
     <h1>Ćwiczenie 1 - Elementy <code>HTML</code> - Programowanie internetowe 2011/2012</h1>
+    <h2>Elementy w blokach</h2>
+    <h3>Paragraf <code>&lt;p&gt;</code></h3>
     <p class="first">
-      One <b>morning</b>, <span class="large">when</span> <i>Gregor Samsa</i> woke from <span
-      class="underlined">troubled</span> dreams, he found<br /> himself
-      <em>transformed</em> in his bed into a <span
-      class="striked">horrible</span> vermin. He <code>lay</code> on his
-      <ins>armour-like</ins> <del>armoured</del> back, and if he
-      <strong>lifted</strong> his head a <span class="colourful">little</span>
-      he <tt>could</tt> see <var>his</var> <span class="super_striked">brown
-      belly</span>, <sup>slightly</sup> <samp>domed</samp> and divided by
-      arches into <sub>stiff</sub> sections.
+      One <b>morning</b>, <span class="caps">when</span> <i>Gregor Samsa</i>
+      woke from <span class="underlined">troubled</span> dreams,&nbsp;he
+      found<br /> himself <em>transformed</em> in his <s>bed</s> into a <span
+      class="striked">horrible</span> <big>vermin</big>. He <code>lay</code> on
+      his <ins>armour-like</ins> <del>armoured</del> back,&nbsp;and if he
+      <strong>lifted</strong> <small>his head</small> a <span
+      class="colourful">little</span> he <tt>could</tt> see <var>his</var> <a
+      href="http://www.blindtextgenerator.com/lorem-ipsum" target="_blank"
+      title="Dummy Text Generator">brown belly</a>, <sup>slightly</sup>
+      <samp>domed</samp> and <u class="colourful"><span
+      class="colourful">divided by</span></u> arches into <sub>stiff</sub>
+      <cite>sections</cite>.
+
+      Zakładka do <a href="#validations_anchor">walidacji</a>. Kontakt z
+      <a href="mailto:cudzilot+laborki_pi#ee.pw.edu.pl">autorem</a>.
     </p>
+    <h3>Cytowanie <code>&lt;blockquote&gt;</code></h3>
     <blockquote class="second">
       <p>
         The bedding was hardly able to cover it and seemed ready to slide off
@@ -38,6 +47,7 @@
         me?" he thought. It wasn't a dream.
       </p>
     </blockquote>
+    <h3>Kod <code>&lt;pre&gt;</code></h3>
     <pre class="third">
       His room, a proper human room although a little too small, lay peacefully
       between its four familiar walls. A collection of textile samples lay
@@ -45,6 +55,8 @@
       there hung a picture.
     </pre>
     <hr />
+    <h2>Listy</h2>
+    <h3>Listy zagnieżdżone <code>&lt;ul&gt;</code> i <code>&lt;ol&gt;</code></h3>
     <ol class="first">
       <li>
         Lorem ipsum
@@ -55,20 +67,14 @@
               <li>Aenean commodo</li>
             </ul>
           </li>
-          <li>
-            ligula eget dolor.
-            <ul class="fourth"> 
-              <li>consectetuer adipiscing elit.</li>
-              <li>Aenean commodo</li>
-            </ul>
-          </li>
+          <li>ligula eget dolor.</li>
           <li>Aenean massa.</li>
         </ol>
       </li>
       <li>Cum sociis natoque</li>
       <li>penatibus et magnis dis parturient montes, nascetur ridiculus mus.</li>
     </ol>
-    <hr />
+    <h3>Lista definicji <code>&lt;dl&gt;</code></h3>
     <dl>
       <dt>Donec quam felis,</dt>
       <dd>ultricies nec,</dd>
@@ -78,13 +84,149 @@
       <dd>Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</dd>
     </dl>
     <hr />
-    <p>Walidacje:</p>
+    <h2>Tablice</h2>
+    <h3>Pionowa tablica <code>&lt;table&gt;</code> psująca mi walidacje</h3>
+    <center>
+      <table class="first" width="75%">
+        <thead>
+          <tr bgcolor="#333" style="color: #eee;">
+            <th>Osoba</th>
+            <th>Adres</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td align="left" valign="top">Gates, Bill</td>
+            <td align="right" valign="top">
+              <address>
+                Microsoft Corporation<br />
+                One Microsoft Way<br />
+                Redmond, WA 98052-7329
+              </address>
+            </td>
+          </tr>
+          <tr>
+            <td align="right" valign="bottom">Jobs, Steve</td>
+            <td align="center" valign="middle">
+              <address>
+                Apple<br />
+                1 Infinite Loop<br />
+                Cupertino, CA 95014
+              </address>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </center>
+    <h3>Prosta pozioma tablica <code>&lt;table&gt;</code></h3>
+    <center>
+      <table class="second">
+        <tr>
+          <th>Osoba:</th>
+          <td>Gates, Bill</td>
+          <td>Jobs, Steve</td>
+        </tr>
+        <tr>
+          <th>Adres:</th>
+          <td>
+            <address>
+              Microsoft Corporation<br />
+              One Microsoft Way<br />
+              Redmond, WA 98052-7329
+            </address>
+          </td>
+          <td>
+            <address>
+              Apple<br />
+              1 Infinite Loop<br />
+              Cupertino, CA 95014
+            </address>
+          </td>
+        </tr>
+        <tr>
+          <th>Przychód:</th>
+          <td colspan="2">&#36;&#36;&#36;</td>
+        </tr>
+      </table>
+    </center>
+    <hr />
+    <h2>Multimedia</h2>
+    <h3>Animacja <code>&lt;marquee&gt;</code></h3>
+    <p>
+      <code>&lt;marquee&gt;</code> nie jest czymś czego sieć potrzebuje. Nie
+      używamy tego tagu.
+    </p>
+    <h3>Obrazy <code>&lt;img&gt;</code></h3>
+    <div>
+      <img alt="Logo wydziału Elektrycznego Politechniki Warszawskiej" class="logo"
+        src="img/ee_logo.jpg" />
+    </div>
+    <h3>Multimedia wstawione <code>&lt;embed&gt;</code> korzystające z rozszerzeń przeglądarek</h3>
+    <div>
+      <object class="youtube_movie" width="480" height="360"><param name="movie" value="http://www.youtube-nocookie.com/v/0SARbwvhupQ?version=3"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube-nocookie.com/v/0SARbwvhupQ?version=3" type="application/x-shockwave-flash" width="480" height="360" allowscriptaccess="always" allowfullscreen="true"></embed></object>
+    </div>
+    <hr />
+    <h2>Ramki</h2>
+    <h3>Ramka pływająca <code>&lt;iframe&gt;</code></h3>
+    <iframe src="index.html" name="nested" class="nested"></iframe>
+    <p>Zmień zawartość ramki na:</p>
+    <ul>
+      <li><a href="index.html" target="nested">stronę ćwiczenia 1</a></li>
+      <li><a href="http://google.com/" target="nested">Google</a></li>
+    </ul>
+    <hr />
+    <h2>Formularze</h2>
+    <h3>Formularz z paroma typami tagów <code>&lt;input&gt;</code></h3>
+    <form action="elements.html" id="contact" method="get" name="contact"
+      onreset="if (!confirm('Czy na pewno chcesz zresetować cały formularz?')) return false">
+      <div>
+        <label for="person_first_name">Imię:</label>
+        <input id="person_first_name" name="person[first_name]" type="text" value="Tomasz" />
+      </div>
+      <div>
+        <label for="person_last_name">Nazwisko:</label>
+        <input id="person_last_name" name="person[last_name]" type="text" value="Cudziło" />
+      </div>
+      <div>
+        <label for="person_bio">Biografia:</label>
+        <textarea cols="50" id="person_bio" name="person[biography]" rows="10">The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph, for quick jigs vex! Fox nymphs grab quick-jived waltz. Brick quiz whangs jumpy veldt fox.</textarea>
+      </div>
+      <div>
+        <label for="studies_specialization">Kierunek studiów:</label>
+        <select id="studies_specialization" name="studies[specialization]">
+          <option value="air">Automatyka i robotyka</option>
+          <option value="et">Elektrotechnika</option>
+          <option value="inf" selected="selected">Informatyka</option>
+        </select>
+      </div>
+      <div>
+        <label>Programowanie internetowe zaliczone:</label>
+        <label for="studies_passed_yes">
+          <input id="studies_passed_yes" name="studies[passed]" checked="checked"
+            type="radio" value="1" />
+          <span>Tak</span>
+        </label>
+        <label for="studies_passed_no">
+          <input id="studies_passed_no" name="studies[passed]" type="radio" value="0" />
+          <span>Nie</span>
+        </label>
+      </div>
+      <div>
+        <input type="submit" value="Wyślij" />
+        <input type="reset" value="Przywróć domyślne wartości" />
+      </div>
+    </form>
+    <hr />
+    <h2><a name="validations_anchor"></a>Walidacje</h2>
+    <p>
+      Otwierają się w nowych oknach. Dokument nie jest zgodny z zadeklarowanym
+      <code>DOCTYPE</code>. Ma prezentować elementy <code>HTML</code> opisane
+      na wykładzie, z których część nie należy do standardu.
+    </p>
     <ul id="validations">
       <!-- referer: http://volt.iem.pw.edu.pl/~cudzilot/pi/cw1/elements.html -->
-      <li><a href="http://validator.w3.org/check?uri=http://volt.iem.pw.edu.pl/~cudzilot/pi/cw1/elements.html"><img alt="Valid XHTML 1.0 Strict" src="http://www.w3.org/Icons/valid-xhtml10" style="border: 0; height: 31px; width: 88px;" /></a></li>
-      <li><a href="http://jigsaw.w3.org/css-validator/validator?uri=http%3A%2F%2Fvolt.iem.pw.edu.pl%2F%7Ecudzilot%2Fpi%2Fcw1%2Felements.html"><img alt="Valid CSS!" src="http://jigsaw.w3.org/css-validator/images/vcss" style="border: 0; height: 31px; width: 88px;" /></a></li>
+      <li><a href="http://validator.w3.org/check?uri=http://volt.iem.pw.edu.pl/~cudzilot/pi/cw1/elements.html" target="_blank"><img alt="Valid XHTML 1.0 Strict" src="http://www.w3.org/Icons/valid-xhtml10" style="border: 0; height: 31px; width: 88px;" /></a></li>
+      <li><a href="http://jigsaw.w3.org/css-validator/validator?uri=http%3A%2F%2Fvolt.iem.pw.edu.pl%2F%7Ecudzilot%2Fpi%2Fcw1%2Felements.html" target="_blank"><img alt="Valid CSS!" src="http://jigsaw.w3.org/css-validator/images/vcss" style="border: 0; height: 31px; width: 88px;" /></a></li>
     </ul>
   </body>
 </html>
-
-

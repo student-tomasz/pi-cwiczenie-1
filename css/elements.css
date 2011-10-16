@@ -1,5 +1,22 @@
+hr {
+  border: none;
+  border-top: solid 1px #333;
+  width: 50em;
+}
+
 p.first {
   text-align: left;
+}
+
+a {
+  text-decoration: underline;
+}
+
+blockquote {
+  border-left: solid 0.2em #ccc;
+  font-style: italic;
+  margin-left: 0;
+  padding-left: 1em;
 }
 
 blockquote.second {
@@ -10,15 +27,7 @@ pre.third {
   text-align: right;
 }
 
-blockquote {
-  border-left: solid 0.2em #ccc;
-  font-style: oblique;
-  margin-left: 0;
-  padding-left: 1em;
-}
-
-span.large {
-  font-size: 200%;
+span.caps{
   font-variant: small-caps;
 }
 
@@ -36,6 +45,18 @@ span.super_striked {
 
 span.colourful {
   color: #df31a9;
+}
+
+u.colourful {
+  color: #ff0;
+}
+
+u.colourful span.colourful {
+  color: #00ad31;
+}
+
+cite {
+  font-style: italic;
 }
 
 ol.first {
@@ -56,4 +77,55 @@ ul.fourth {
 
 dt {
   font-weight: bold;
+}
+
+table.first {
+
+}
+
+img.logo, .youtube_movie, iframe.nested {
+  border: solid 1px #333;
+  background-color: #f9f9f9;
+  display: block;
+  margin: 1em auto;
+  padding: 1em;
+}
+
+iframe.nested {
+  margin-right: -18px;
+  margin-left: -18px;
+  padding: 16px;
+  height: 30em;
+  width: 50em;
+}
+
+form#contact label {
+  display: block;
+  font-weight: bold;
+  margin: 0.5em 0;
+}
+
+form#contact input[type="text"], form#contact textarea {
+  border: solid 1px #333;
+  background-color: #f9f9f9;
+  color: #333;
+  padding: 0.5em;
+}
+
+form#contact textarea {
+  height: 10em;
+  width: 49em;
+}
+
+form#contact select {
+  font-size: 16px;
+}
+
+form#contact input[type="submit"], form#contact input[type="reset"] {
+  font-size: 16px;
+  margin: 1em 0;
+}
+
+form#contact label > span {
+  font-weight: normal;
 }

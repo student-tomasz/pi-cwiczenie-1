@@ -119,12 +119,12 @@ form#contact textarea {
 }
 
 form#contact select {
-  font-size: 16px;
+  font-size: 13px;
   margin-bottom: 0.5em;
 }
 
 form#contact input[type="submit"], form#contact input[type="reset"] {
-  font-size: 16px;
+  font-size: 13px;
   margin: 0 0 0.5em;
 }
 

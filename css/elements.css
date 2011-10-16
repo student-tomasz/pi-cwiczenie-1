@@ -2,10 +2,6 @@ p.first {
   text-align: left;
 }
 
-a {
-  text-decoration: underline;
-}
-
 blockquote {
   border-left: solid 0.2em #ccc;
   font-style: italic;

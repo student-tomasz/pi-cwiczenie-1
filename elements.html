@@ -179,38 +179,38 @@
     <h3>Formularz z paroma typami tagów <code>&lt;input&gt;</code></h3>
     <form action="elements.html" id="contact" method="get" name="contact"
       onreset="if (!confirm('Czy na pewno chcesz zresetować cały formularz?')) return false">
-      <div>
+      <fieldset>
+        <legend>Dane studenta:</legend>
         <label for="person_first_name">Imię:</label>
         <input id="person_first_name" name="person[first_name]" type="text" value="Tomasz" />
-      </div>
-      <div>
         <label for="person_last_name">Nazwisko:</label>
         <input id="person_last_name" name="person[last_name]" type="text" value="Cudziło" />
-      </div>
-      <div>
         <label for="person_bio">Biografia:</label>
         <textarea cols="50" id="person_bio" name="person[biography]" rows="10">The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph, for quick jigs vex! Fox nymphs grab quick-jived waltz. Brick quiz whangs jumpy veldt fox.</textarea>
-      </div>
-      <div>
-        <label for="studies_specialization">Kierunek studiów:</label>
-        <select id="studies_specialization" name="studies[specialization]">
-          <option value="air">Automatyka i robotyka</option>
-          <option value="et">Elektrotechnika</option>
-          <option value="inf" selected="selected">Informatyka</option>
-        </select>
-      </div>
-      <div>
-        <label>Programowanie internetowe zaliczone:</label>
-        <label for="studies_passed_yes">
-          <input id="studies_passed_yes" name="studies[passed]" checked="checked"
-            type="radio" value="1" />
-          <span>Tak</span>
-        </label>
-        <label for="studies_passed_no">
-          <input id="studies_passed_no" name="studies[passed]" type="radio" value="0" />
-          <span>Nie</span>
-        </label>
-      </div>
+      </fieldset>
+      <fieldset>
+        <legend>Dane o zajęciach:</legend>
+        <div>
+          <label for="studies_specialization">Kierunek studiów:</label>
+          <select id="studies_specialization" name="studies[specialization]">
+            <option value="air">Automatyka i robotyka</option>
+            <option value="et">Elektrotechnika</option>
+            <option value="inf" selected="selected">Informatyka</option>
+          </select>
+        </div>
+        <div>
+          <label>Ćwiczenie 1 z laborek Programowanie internetowe zaliczone:</label>
+          <label for="studies_passed_yes">
+            <input id="studies_passed_yes" name="studies[passed]" checked="checked"
+              type="radio" value="1" />
+            <span>Tak</span>
+          </label>
+          <label for="studies_passed_no">
+            <input id="studies_passed_no" name="studies[passed]" type="radio" value="0" />
+            <span>Nie</span>
+          </label>
+        </div>
+      </fieldset>
       <div>
         <input type="submit" value="Wyślij" />
         <input type="reset" value="Przywróć domyślne wartości" />

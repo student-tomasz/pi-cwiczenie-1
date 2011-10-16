@@ -1,0 +1,22 @@
+pre.code {
+  background-color: #f9f9f9;
+  border: 1px solid #333;
+  color: #333;
+  font-size: 11px;
+  padding: 1em;
+}
+
+pre.code.correct {
+  background-color: #D1EED1;
+  border-color: #BFE7BF;
+}
+
+pre.code.incorrect {
+  background-color: #FDDFDE;
+  border-color: #FBC7C6;
+}
+
+pre.code ol {
+  margin: 0;
+  padding: 0;
+}

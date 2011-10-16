@@ -6,8 +6,8 @@
      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
      <meta http-equiv="Content-Language" content="pl" />
      <meta name="Description" content="Porównanie HTML 4.01 do XHTML 1.0 --
-       layout z użyciem div, w DOCTYPE XHTML 1.0 Strict. Projekt do ćwiczenia 1 z
-       laborek Programowanie internetowe 2011/2012." />
+     layout z użyciem &lt;div&gt;, w DOCTYPE XHTML 1.0 Strict. Projekt do
+     ćwiczenia 1 z laborek Programowanie internetowe 2011/2012." />
      <meta name="Author" content="cudzilot" />
 
      <title>
@@ -24,28 +24,29 @@
      <link href="../favicon.ico" rel="shortcut icon" type="image/ico" />
   </head>
   <body id="project_1_compare_xhtml_divs" class="project_1_compare">
-    <div id="header">
-      <h1>
-        <a href="../index.html">Programowanie internetowe 2011/2012</a> &raquo;
-        <a href="index.html">Ćwiczenie 1</a> &raquo;
-        Porównanie <code>XHTML 1.0</code> do <code>HTML 4.01</code>
-      </h1>
-      <!-- <h2>-->
-      <!--   Typ dokumentu: <code>XHTML 1.0 Strict</code>;-->
-      <!--   Layout na bazie <code>&lt;div&gt;</code>-->
-      <!-- </h2>-->
-    </div>
-    <div id="content">
-      <div id="aside">
-        <h2>Menu:</h2>
-        <p>Pozostałe porównania:</p>
-        <ul id="nav">
-          <li>w <code>XHTML 1.0</code> używając <code>&lt;div&gt;</code></li>
-          <li><a href="compare_xhtml_tables.html">w <code>XHTML 1.0</code> używając <code>&lt;table&gt;</code></a></li>
-          <li><a href="compare_html_divs.html">w <code>HTML 4.01</code> używając <code>&lt;div&gt;</code></a></li>
-          <li><a href="compare_html_tables.html">w <code>HTML 4.01</code> używając <code>&lt;table&gt;</code></a></li>
-        </ul>
-        <p>Legenda:</p>
+    <div id="#wrapper">
+      <div id="header">
+        <h1>
+          <a href="../index.html">Programowanie internetowe 2011/2012</a> &raquo;
+          <a href="index.html">Ćwiczenie 1</a> &raquo;
+          Porównanie <code>XHTML 1.0</code> do <code>HTML 4.01</code>
+        </h1>
+        <!-- <h2>-->
+        <!--   Typ dokumentu: <code>XHTML 1.0 Strict</code>;-->
+        <!--   Layout na bazie <code>&lt;div&gt;</code>-->
+        <!-- </h2>-->
+      </div>
+      <div id="content">
+        <div id="aside">
+          <h2>Menu:</h2>
+          <p>Pozostałe porównania:</p>
+          <ul id="nav">
+            <li>w <code>XHTML 1.0</code> używając <code>&lt;div&gt;</code></li>
+            <li><a href="compare_xhtml_tables.html">w <code>XHTML 1.0</code> używając <code>&lt;table&gt;</code></a></li>
+            <li><a href="compare_html_divs.html">w <code>HTML 4.01</code> używając <code>&lt;div&gt;</code></a></li>
+            <li><a href="compare_html_tables.html">w <code>HTML 4.01</code> używając <code>&lt;table&gt;</code></a></li>
+          </ul>
+          <p>Legenda:</p>
 <pre class="code correct">
 poprawny kod XHTML 1.0
 </pre>
@@ -53,31 +54,31 @@ poprawny kod XHTML 1.0
 poprawny kod HTML 4.01
 ale nie XHTML 1.0
 </pre>
-      </div>
-      <div id="article">
-        <h2>Artykuł:</h2>
+        </div>
+        <div id="article">
+          <h2>Artykuł:</h2>
 
-        <h3>Obowiązkowa struktura drzewa</h3>
-        <p>
-          <code>XHTML</code> wymaga obecności tagów <code>&lt;head&gt;</code> i
-          <code>&lt;body&gt;</code> oraz dokładnie jeden korzeń typu
-          <code>&lt;html&gt;</code>.
-        </p>
+          <h3>Obowiązkowa struktura drzewa</h3>
+          <p>
+            <code>XHTML</code> wymaga obecności tagów <code>&lt;head&gt;</code> i
+            <code>&lt;body&gt;</code> oraz dokładnie jeden korzeń typu
+            <code>&lt;html&gt;</code>.
+          </p>
 
-        <h3>Obowiązkowa deklaracja przestrzeni nazw</h3>
-        <p>
-          <code>XHTML</code> wymaga obecności atrybutu <code>xmlns</code> w
-          tagu <code>&lt;html&gt;</code>.
-        </p>
+          <h3>Obowiązkowa deklaracja przestrzeni nazw</h3>
+          <p>
+            <code>XHTML</code> wymaga obecności atrybutu <code>xmlns</code> w
+            tagu <code>&lt;html&gt;</code>.
+          </p>
 <pre class="code correct">
   &lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
 </pre>
 
-        <h3>Czułość na wielkość znaków</h3>
-        <p>
-          Ponieważ <code>XML</code> jest czuły na wielkość znaków tagi w
-          <code>XHTML</code> muszą być pisane małymi literami.
-        </p>
+          <h3>Czułość na wielkość znaków</h3>
+          <p>
+            Ponieważ <code>XML</code> jest czuły na wielkość znaków tagi w
+            <code>XHTML</code> muszą być pisane małymi literami.
+          </p>
 <pre class="code correct">
   &lt;input type=&quot;checkbox&quot; name=&quot;name&quot; value=&quot;value&quot; /&gt;
 </pre>
@@ -85,11 +86,11 @@ ale nie XHTML 1.0
   &lt;INPUT TYPE=&quot;checkbox&quot; NAME=&quot;name&quot; VALUE=&quot;value&quot;&gt;
 </pre>
 
-        <h3>Zamykanie tagów</h3>
-        <p>
-          W <code>XHTML</code> wszystkie tagi muszą być zamykane. W <code>HTML
-          4.01</code> nie wszystkie tagi muszą być zamykane.
-        </p>
+          <h3>Zamykanie tagów</h3>
+          <p>
+            W <code>XHTML</code> wszystkie tagi muszą być zamykane. W <code>HTML
+            4.01</code> nie wszystkie tagi muszą być zamykane.
+          </p>
 <pre class="code correct">
   &lt;ol&gt;
     &lt;li&gt;lorem ipsum&lt;/li&gt;
@@ -107,32 +108,32 @@ ale nie XHTML 1.0
   &lt;img src=&quot;logo.jpg&quot;&gt;
 </pre>
 
-        <h3>Zagnieżdżanie tagów</h3>
-        <p>
-          <code>XHTML</code> ma być zgodny z <code>XML</code>, dlatego
-          wszystkie tagi muszą być zamykane w ramach swojego zakresu. Inaczej
-          dokument jest uważany za błędny.<br />
-          W <code>HTML 4.01</code> również jest to wymagane, jednak
-          przeglądarki przeważnie tolerują ten błąd.
-        </p>
+          <h3>Zagnieżdżanie tagów</h3>
+          <p>
+            <code>XHTML</code> ma być zgodny z <code>XML</code>, dlatego
+            wszystkie tagi muszą być zamykane w ramach swojego zakresu. Inaczej
+            dokument jest uważany za błędny.<br />
+            W <code>HTML 4.01</code> również jest to wymagane, jednak
+            przeglądarki przeważnie tolerują ten błąd.
+          </p>
 <pre class="code correct">
   &lt;p&gt;Lorem &lt;b&gt;ipsum!&lt;/b&gt;&lt;/p&gt;
 </pre>
 <pre class="code incorrect">
   &lt;p&gt;Lorem &lt;b&gt;ipsum!&lt;/p&gt;&lt;/b&gt;
 </pre>
-        <p>
-          Dodatkowo w <code>XHTML</code> zagnieżdżanie pewnych tagów jest
-          ograniczone. Nie dozwolne jest wstawienie <code>&lt;a&gt;</code> do
-          <code>&lt;a&gt;</code>, lub <code>&lt;form&gt;</code> w
-          <code>&lt;form&gt;</code>.
-        </p>
+          <p>
+            Dodatkowo w <code>XHTML</code> zagnieżdżanie pewnych tagów jest
+            ograniczone. Nie dozwolne jest wstawienie <code>&lt;a&gt;</code> do
+            <code>&lt;a&gt;</code>, lub <code>&lt;form&gt;</code> w
+            <code>&lt;form&gt;</code>.
+          </p>
 
-        <h3>Wartości atrybutów</h3>
-        <p>
-          <code>XHTML</code> wymusza wartości atrybutów nieskrócone i zamknięte
-          w cudzysłowy. <code>HTML 4.01</code> nie posiada tych ograniczeń.
-        </p>
+          <h3>Wartości atrybutów</h3>
+          <p>
+            <code>XHTML</code> wymusza wartości atrybutów nieskrócone i zamknięte
+            w cudzysłowy. <code>HTML 4.01</code> nie posiada tych ograniczeń.
+          </p>
 <pre class="code correct">
   &lt;input type=&quot;radio&quot; value=&quot;1&quot; checked=&quot;checked&quot; /&gt;
 </pre>
@@ -140,15 +141,15 @@ ale nie XHTML 1.0
   &lt;input type=radio value=1 checked&gt;
 </pre>
 
-        <h3>Lokalne skrypty i style</h3>
-        <p>
-          <code>XHTML</code> ma być traktowany jak <code>XML</code>. Może się
-          zdarzyć, że zawartość tagów <code>&lt;script&gt;</code> lub
-          <code>&lt;style&gt;</code> może zostać potraktowana przez parser jako
-          część drzewa. Dlatego trzeba zamykać ten kod w znacznikach
-          <code>&lt;![CDATA[ ... ]]&gt;</code> lub wczytywać je z zewnętrznego
-          pliku.
-        </p>
+          <h3>Lokalne skrypty i style</h3>
+          <p>
+            <code>XHTML</code> ma być traktowany jak <code>XML</code>. Może się
+            zdarzyć, że zawartość tagów <code>&lt;script&gt;</code> lub
+            <code>&lt;style&gt;</code> może zostać potraktowana przez parser jako
+            część drzewa. Dlatego trzeba zamykać ten kod w znacznikach
+            <code>&lt;![CDATA[ ... ]]&gt;</code> lub wczytywać je z zewnętrznego
+            pliku.
+          </p>
 <pre class="code correct">
   &lt;script type=&quot;text/javascript&quot;&gt;
   &lt;![CDATA[
@@ -156,16 +157,17 @@ ale nie XHTML 1.0
   ]]&gt;
   &lt;/script&gt;
 </pre>
+        </div>
+        <div class="clearfix"></div>
       </div>
-      <div class="clearfix"></div>
-    </div>
-    <div id="footer">
-      <h2>Walidacje</h2>
-      <ul id="validations">
-        <!-- referer: http://volt.iem.pw.edu.pl/~cudzilot/pi/cw1/compare_xhtml_divs.html -->
-        <li><a href="http://validator.w3.org/check?uri=http://volt.iem.pw.edu.pl/~cudzilot/pi/cw1/compare_xhtml_divs.html"><img alt="Valid XHTML 1.0 Strict" src="http://www.w3.org/Icons/valid-xhtml10" style="border: 0; height: 31px; width: 88px;" /></a></li>
-        <li><a href="http://jigsaw.w3.org/css-validator/validator?uri=http%3A%2F%2Fvolt.iem.pw.edu.pl%2F%7Ecudzilot%2Fpi%2Fcw1%2Fcompare_xhtml_divs.html"><img alt="Valid CSS!" src="http://jigsaw.w3.org/css-validator/images/vcss" style="border: 0; height: 31px; width: 88px;" /></a></li>
-      </ul>
+      <div id="footer">
+        <h2>Walidacje</h2>
+        <ul id="validations">
+          <!-- referer: http://volt.iem.pw.edu.pl/~cudzilot/pi/cw1/compare_xhtml_divs.html -->
+          <li><a href="http://validator.w3.org/check?uri=http://volt.iem.pw.edu.pl/~cudzilot/pi/cw1/compare_xhtml_divs.html"><img alt="Valid XHTML 1.0 Strict" src="http://www.w3.org/Icons/valid-xhtml10" style="border: 0; height: 31px; width: 88px;" /></a></li>
+          <li><a href="http://jigsaw.w3.org/css-validator/validator?uri=http%3A%2F%2Fvolt.iem.pw.edu.pl%2F%7Ecudzilot%2Fpi%2Fcw1%2Fcompare_xhtml_divs.html"><img alt="Valid CSS!" src="http://jigsaw.w3.org/css-validator/images/vcss" style="border: 0; height: 31px; width: 88px;" /></a></li>
+        </ul>
+      </div>
     </div>
   </body>
 </html>

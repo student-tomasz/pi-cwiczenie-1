@@ -1,44 +1,13 @@
-.project_1_compare {
+body.project_1_compare {
   width: 70em;
 }
 
-table#wrapper, table#wrapper td {
-  border: none;
-  margin: 0;
-  padding: 0;
-}
-
-table#wrapper td#aside {
-  text-align: left;
-  vertical-align: top;
-  padding-right: 1em;
-  width: 21em;
-}
-
-table#wrapper td#article {
-  width: 48em;
-}
-
-div#header {
-  clear: both;
-}
-
-div#aside {
-  float: left;
-  width: 21em;
-}
-
-div#article {
-  float: right;
-  width: 48em;
-}
-
-div.section {
+.section {
   clear: both;
   margin-bottom: 3em;
 }
 
-div.section img {
+.section img {
   border: solid 1px #333;
   background-color: #f9f9f9;
   display: block;
@@ -70,30 +39,95 @@ pre.code ol {
   padding: 0;
 }
 
+/* div specific */
+
+div#header {
+  clear: both;
+}
+
+div#aside {
+  float: left;
+  width: 21em;
+}
+
+div#article {
+  float: right;
+  width: 48em;
+}
+
 div#footer {
   clear: both;
 }
 
-div.section#tree img {
+/* images */
+
+#tree img {
   display: block;
   margin: 0 auto;
 }
 
-div.section#namespace img {
+#namespace img {
   float: right;
   margin: 0 0 1em 1em;
 }
 
-div.section#case img,
-div.section#close_tags img {
+#case img,
+#close_tags img {
   float: left;
   margin: 0 1em 1em 0;
 }
 
-div.section#case img {
-  width: 12%;
+#case img {
+  margin: 0 1em 1em 0;
+  width: 6em;
 }
 
-div.section#close_tags img {
-  width: 33%;
+#close_tags img {
+  width: 16em;
+}
+
+/* table specific */
+
+table#wrapper, table#wrapper tr, table#wrapper td {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+table#wrapper td#aside {
+  text-align: left;
+  vertical-align: top;
+  padding-right: 1em;
+  width: 21em;
+}
+
+table#wrapper td#article {
+  width: 48em;
+}
+
+table#wrapper #footer h2 {
+  margin-top: 0;
+}
+
+table#article_wrapper, table#article_wrapper tr, table#article_wrapper td {
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+table.section {
+  width: 100%;
+}
+
+table.section h3 {
+  margin-top: 0;
+}
+
+table.section td {
+  vertical-align: top;
+}
+
+table.section .last {
+  margin-bottom: 0;
 }

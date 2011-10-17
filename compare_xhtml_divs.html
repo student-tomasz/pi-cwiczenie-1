@@ -1,6 +1,6 @@
 <!DOCTYPE html
-     PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+    PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pl">
   <head>
      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -34,7 +34,7 @@
       </div>
       <div id="content">
         <div id="aside">
-          <h2>Menu:</h2>
+          <h2>Menu</h2>
           <p>Pozostałe porównania:</p>
           <ul id="nav">
             <li>w <code>XHTML 1.0</code> używając <code>&lt;div&gt;</code></li>
@@ -52,63 +52,67 @@ ale nie XHTML 1.0
 </pre>
         </div>
         <div id="article">
-          <h2>Artykuł:</h2>
+          <h2>Artykuł</h2>
 
-          <div class="section">
-            <h3>Obowiązkowa struktura drzewa</h3>
+          <div id="tree" class="section">
+            <h3>Struktura drzewa</h3>
             <p>
               <code>XHTML</code> wymaga obecności tagów <code>&lt;head&gt;</code> i
               <code>&lt;body&gt;</code> oraz dokładnie jeden korzeń typu
               <code>&lt;html&gt;</code>.
             </p>
+            <img alt="Drzewo prostego dokumentu XHTML." src="img/tree.gif" />
           </div>
 
-          <div class="section">
+          <div id="namespace" class="section">
+            <img alt="Przykład tagu z atrybutem xmlns." src="img/namespace.png" />
             <h3>Obowiązkowa deklaracja przestrzeni nazw</h3>
             <p>
               <code>XHTML</code> wymaga obecności atrybutu <code>xmlns</code> w
               tagu <code>&lt;html&gt;</code>.
             </p>
 <pre class="code correct">
-  &lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
+&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
 </pre>
           </div>
 
-          <div class="section">
+          <div id="case" class="section">
+            <img alt="Te literki są różnych wielkości." src="img/case.png" />
             <h3>Czułość na wielkość znaków</h3>
             <p>
               Ponieważ <code>XML</code> jest czuły na wielkość znaków tagi w
               <code>XHTML</code> muszą być pisane małymi literami.
             </p>
 <pre class="code correct">
-  &lt;input type=&quot;checkbox&quot; name=&quot;name&quot; value=&quot;value&quot; /&gt;
+&lt;input type=&quot;checkbox&quot; name=&quot;name&quot; value=&quot;value&quot; /&gt;
 </pre>
 <pre class="code incorrect">
-  &lt;INPUT TYPE=&quot;checkbox&quot; NAME=&quot;name&quot; VALUE=&quot;value&quot;&gt;
+&lt;INPUT TYPE=&quot;checkbox&quot; NAME=&quot;name&quot; VALUE=&quot;value&quot;&gt;
 </pre>
           </div>
 
-          <div class="section">
+          <div id="close_tags" class="section">
+            <img alt="Zdjęcie wydrukowanego HTMLa." src="img/close_tags.jpg" />
             <h3>Zamykanie tagów</h3>
             <p>
               W <code>XHTML</code> wszystkie tagi muszą być zamykane. W <code>HTML
               4.01</code> nie wszystkie tagi muszą być zamykane.
             </p>
 <pre class="code correct">
-  &lt;ol&gt;
-    &lt;li&gt;lorem ipsum&lt;/li&gt;
-  &lt;/ol&gt;
+&lt;ol&gt;
+  &lt;li&gt;lorem ipsum&lt;/li&gt;
+&lt;/ol&gt;
 </pre>
 <pre class="code incorrect">
-  &lt;ol&gt;
-    &lt;li&gt;lorem ipsum
-  &lt;/ol&gt;
+&lt;ol&gt;
+  &lt;li&gt;lorem ipsum
+&lt;/ol&gt;
 </pre>
 <pre class="code correct">
-  &lt;img src=&quot;logo.jpg&quot; /&gt;
+&lt;img src=&quot;logo.jpg&quot; /&gt;
 </pre>
 <pre class="code incorrect">
-  &lt;img src=&quot;logo.jpg&quot;&gt;
+&lt;img src=&quot;logo.jpg&quot;&gt;
 </pre>
           </div>
 
@@ -122,16 +126,16 @@ ale nie XHTML 1.0
               przeglądarki przeważnie tolerują ten błąd.
             </p>
 <pre class="code correct">
-  &lt;p&gt;Lorem &lt;b&gt;ipsum!&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;Lorem &lt;b&gt;ipsum!&lt;/b&gt;&lt;/p&gt;
 </pre>
 <pre class="code incorrect">
-  &lt;p&gt;Lorem &lt;b&gt;ipsum!&lt;/p&gt;&lt;/b&gt;
+&lt;p&gt;Lorem &lt;b&gt;ipsum!&lt;/p&gt;&lt;/b&gt;
 </pre>
             <p>
               Dodatkowo w <code>XHTML</code> zagnieżdżanie pewnych tagów jest
-              ograniczone. Nie dozwolne jest wstawienie <code>&lt;a&gt;</code> do
-              <code>&lt;a&gt;</code>, lub <code>&lt;form&gt;</code> w
-              <code>&lt;form&gt;</code>.
+              ograniczone. Na przykład nie dozwolne jest wstawienie
+              <code>&lt;a&gt;</code> do <code>&lt;a&gt;</code>, lub
+              <code>&lt;form&gt;</code> w <code>&lt;form&gt;</code>.
             </p>
           </div>
 
@@ -142,10 +146,10 @@ ale nie XHTML 1.0
               w cudzysłowy. <code>HTML 4.01</code> nie posiada tych ograniczeń.
             </p>
 <pre class="code correct">
-  &lt;input type=&quot;radio&quot; value=&quot;1&quot; checked=&quot;checked&quot; /&gt;
+&lt;input type=&quot;radio&quot; value=&quot;1&quot; checked=&quot;checked&quot; /&gt;
 </pre>
 <pre class="code incorrect">
-  &lt;input type=radio value=1 checked&gt;
+&lt;input type=radio value=1 checked&gt;
 </pre>
           </div>
 
@@ -160,15 +164,14 @@ ale nie XHTML 1.0
               pliku.
             </p>
 <pre class="code correct">
-  &lt;script type=&quot;text/javascript&quot;&gt;
-  &lt;![CDATA[
-    document.write(&quot;&lt;b&gt;Hello World!&lt;/b&gt;&quot;);
-  ]]&gt;
-  &lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+&lt;![CDATA[
+  document.write(&quot;&lt;b&gt;Hello World!&lt;/b&gt;&quot;);
+]]&gt;
+&lt;/script&gt;
 </pre>
           </div>
         </div>
-        <div class="clearfix"></div>
       </div>
       <div id="footer">
         <h2>Walidacje</h2>

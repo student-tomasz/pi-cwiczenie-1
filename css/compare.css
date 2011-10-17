@@ -19,6 +19,10 @@ table#wrapper td#article {
   width: 48em;
 }
 
+div#header {
+  clear: both;
+}
+
 div#aside {
   float: left;
   width: 21em;
@@ -40,30 +44,6 @@ div.section img {
   display: block;
   margin: 0;
   padding: 1em;
-}
-
-#project_1_compare_xhtml_divs div.section#tree img {
-  display: block;
-  margin: 0 auto;
-}
-
-#project_1_compare_xhtml_divs div.section#namespace img {
-  float: right;
-  margin: 0 0 1em 1em;
-}
-
-#project_1_compare_xhtml_divs div.section#case img,
-#project_1_compare_xhtml_divs div.section#close_tags img {
-  float: left;
-  margin: 0 1em 1em 0;
-}
-
-#project_1_compare_xhtml_divs div.section#case img {
-  width: 12%;
-}
-
-#project_1_compare_xhtml_divs div.section#close_tags img {
-  width: 33%;
 }
 
 pre.code {
@@ -90,6 +70,30 @@ pre.code ol {
   padding: 0;
 }
 
-#project_1_compare_xhtml_divs #footer {
+div#footer {
   clear: both;
+}
+
+div.section#tree img {
+  display: block;
+  margin: 0 auto;
+}
+
+div.section#namespace img {
+  float: right;
+  margin: 0 0 1em 1em;
+}
+
+div.section#case img,
+div.section#close_tags img {
+  float: left;
+  margin: 0 1em 1em 0;
+}
+
+div.section#case img {
+  width: 12%;
+}
+
+div.section#close_tags img {
+  width: 33%;
 }

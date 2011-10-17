@@ -31,10 +31,6 @@
           <a href="index.html">Ćwiczenie 1</a> &raquo;
           Porównanie <code>XHTML 1.0</code> do <code>HTML 4.01</code>
         </h1>
-        <!-- <h2>-->
-        <!--   Typ dokumentu: <code>XHTML 1.0 Strict</code>;-->
-        <!--   Layout na bazie <code>&lt;div&gt;</code>-->
-        <!-- </h2>-->
       </div>
       <div id="content">
         <div id="aside">
@@ -58,39 +54,46 @@ ale nie XHTML 1.0
         <div id="article">
           <h2>Artykuł:</h2>
 
-          <h3>Obowiązkowa struktura drzewa</h3>
-          <p>
-            <code>XHTML</code> wymaga obecności tagów <code>&lt;head&gt;</code> i
-            <code>&lt;body&gt;</code> oraz dokładnie jeden korzeń typu
-            <code>&lt;html&gt;</code>.
-          </p>
+          <div class="section">
+            <h3>Obowiązkowa struktura drzewa</h3>
+            <p>
+              <code>XHTML</code> wymaga obecności tagów <code>&lt;head&gt;</code> i
+              <code>&lt;body&gt;</code> oraz dokładnie jeden korzeń typu
+              <code>&lt;html&gt;</code>.
+            </p>
+          </div>
 
-          <h3>Obowiązkowa deklaracja przestrzeni nazw</h3>
-          <p>
-            <code>XHTML</code> wymaga obecności atrybutu <code>xmlns</code> w
-            tagu <code>&lt;html&gt;</code>.
-          </p>
+          <div class="section">
+            <h3>Obowiązkowa deklaracja przestrzeni nazw</h3>
+            <p>
+              <code>XHTML</code> wymaga obecności atrybutu <code>xmlns</code> w
+              tagu <code>&lt;html&gt;</code>.
+            </p>
 <pre class="code correct">
   &lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
 </pre>
+          </div>
 
-          <h3>Czułość na wielkość znaków</h3>
-          <p>
-            Ponieważ <code>XML</code> jest czuły na wielkość znaków tagi w
-            <code>XHTML</code> muszą być pisane małymi literami.
-          </p>
+          <div class="section">
+            <h3>Czułość na wielkość znaków</h3>
+            <p>
+              Ponieważ <code>XML</code> jest czuły na wielkość znaków tagi w
+              <code>XHTML</code> muszą być pisane małymi literami.
+            </p>
 <pre class="code correct">
   &lt;input type=&quot;checkbox&quot; name=&quot;name&quot; value=&quot;value&quot; /&gt;
 </pre>
 <pre class="code incorrect">
   &lt;INPUT TYPE=&quot;checkbox&quot; NAME=&quot;name&quot; VALUE=&quot;value&quot;&gt;
 </pre>
+          </div>
 
-          <h3>Zamykanie tagów</h3>
-          <p>
-            W <code>XHTML</code> wszystkie tagi muszą być zamykane. W <code>HTML
-            4.01</code> nie wszystkie tagi muszą być zamykane.
-          </p>
+          <div class="section">
+            <h3>Zamykanie tagów</h3>
+            <p>
+              W <code>XHTML</code> wszystkie tagi muszą być zamykane. W <code>HTML
+              4.01</code> nie wszystkie tagi muszą być zamykane.
+            </p>
 <pre class="code correct">
   &lt;ol&gt;
     &lt;li&gt;lorem ipsum&lt;/li&gt;
@@ -107,49 +110,55 @@ ale nie XHTML 1.0
 <pre class="code incorrect">
   &lt;img src=&quot;logo.jpg&quot;&gt;
 </pre>
+          </div>
 
-          <h3>Zagnieżdżanie tagów</h3>
-          <p>
-            <code>XHTML</code> ma być zgodny z <code>XML</code>, dlatego
-            wszystkie tagi muszą być zamykane w ramach swojego zakresu. Inaczej
-            dokument jest uważany za błędny.<br />
-            W <code>HTML 4.01</code> również jest to wymagane, jednak
-            przeglądarki przeważnie tolerują ten błąd.
-          </p>
+          <div class="section">
+            <h3>Zagnieżdżanie tagów</h3>
+            <p>
+              <code>XHTML</code> ma być zgodny z <code>XML</code>, dlatego
+              wszystkie tagi muszą być zamykane w ramach swojego zakresu. Inaczej
+              dokument jest uważany za błędny.<br />
+              W <code>HTML 4.01</code> również jest to wymagane, jednak
+              przeglądarki przeważnie tolerują ten błąd.
+            </p>
 <pre class="code correct">
   &lt;p&gt;Lorem &lt;b&gt;ipsum!&lt;/b&gt;&lt;/p&gt;
 </pre>
 <pre class="code incorrect">
   &lt;p&gt;Lorem &lt;b&gt;ipsum!&lt;/p&gt;&lt;/b&gt;
 </pre>
-          <p>
-            Dodatkowo w <code>XHTML</code> zagnieżdżanie pewnych tagów jest
-            ograniczone. Nie dozwolne jest wstawienie <code>&lt;a&gt;</code> do
-            <code>&lt;a&gt;</code>, lub <code>&lt;form&gt;</code> w
-            <code>&lt;form&gt;</code>.
-          </p>
+            <p>
+              Dodatkowo w <code>XHTML</code> zagnieżdżanie pewnych tagów jest
+              ograniczone. Nie dozwolne jest wstawienie <code>&lt;a&gt;</code> do
+              <code>&lt;a&gt;</code>, lub <code>&lt;form&gt;</code> w
+              <code>&lt;form&gt;</code>.
+            </p>
+          </div>
 
-          <h3>Wartości atrybutów</h3>
-          <p>
-            <code>XHTML</code> wymusza wartości atrybutów nieskrócone i zamknięte
-            w cudzysłowy. <code>HTML 4.01</code> nie posiada tych ograniczeń.
-          </p>
+          <div class="section">
+            <h3>Wartości atrybutów</h3>
+            <p>
+              <code>XHTML</code> wymusza wartości atrybutów nieskrócone i zamknięte
+              w cudzysłowy. <code>HTML 4.01</code> nie posiada tych ograniczeń.
+            </p>
 <pre class="code correct">
   &lt;input type=&quot;radio&quot; value=&quot;1&quot; checked=&quot;checked&quot; /&gt;
 </pre>
 <pre class="code incorrect">
   &lt;input type=radio value=1 checked&gt;
 </pre>
+          </div>
 
-          <h3>Lokalne skrypty i style</h3>
-          <p>
-            <code>XHTML</code> ma być traktowany jak <code>XML</code>. Może się
-            zdarzyć, że zawartość tagów <code>&lt;script&gt;</code> lub
-            <code>&lt;style&gt;</code> może zostać potraktowana przez parser jako
-            część drzewa. Dlatego trzeba zamykać ten kod w znacznikach
-            <code>&lt;![CDATA[ ... ]]&gt;</code> lub wczytywać je z zewnętrznego
-            pliku.
-          </p>
+          <div class="section">
+            <h3>Lokalne skrypty i style</h3>
+            <p>
+              <code>XHTML</code> ma być traktowany jak <code>XML</code>. Może się
+              zdarzyć, że zawartość tagów <code>&lt;script&gt;</code> lub
+              <code>&lt;style&gt;</code> może zostać potraktowana przez parser jako
+              część drzewa. Dlatego trzeba zamykać ten kod w znacznikach
+              <code>&lt;![CDATA[ ... ]]&gt;</code> lub wczytywać je z zewnętrznego
+              pliku.
+            </p>
 <pre class="code correct">
   &lt;script type=&quot;text/javascript&quot;&gt;
   &lt;![CDATA[
@@ -157,6 +166,7 @@ ale nie XHTML 1.0
   ]]&gt;
   &lt;/script&gt;
 </pre>
+          </div>
         </div>
         <div class="clearfix"></div>
       </div>

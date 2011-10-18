@@ -109,6 +109,10 @@ table#wrapper #footer h2 {
   margin-top: 0;
 }
 
+table#wrapper #footer ul {
+  margin-bottom: 0;
+}
+
 table#article_wrapper, table#article_wrapper tr, table#article_wrapper td {
   border: none;
   margin: 0;

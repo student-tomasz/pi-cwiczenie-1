@@ -86,7 +86,7 @@ iframe.nested {
   margin-left: -18px;
   padding: 16px;
   height: 30em;
-  width: 50em;
+  width: 100%;
 }
 
 form#contact fieldset {

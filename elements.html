@@ -21,12 +21,8 @@
     <link href="../favicon.ico" rel="shortcut icon" type="image/ico" />
 
     <script type="text/javascript" src="../lib/jquery-latest.min.js"></script>
-    <!-- http://alexgorbatchev.com/SyntaxHighlighter/ -->
-    <script type="text/javascript" src="../lib/syntaxhighlighter-latest/scripts/shCore.js"></script>
-    <script type="text/javascript" src="../lib/syntaxhighlighter-latest/scripts/shBrushXml.js"></script>
-    <link type="text/css" href="../lib/syntaxhighlighter-latest/styles/shCore.css" rel="stylesheet" />
-    <link type="text/css" href="../lib/syntaxhighlighter-latest/styles/shThemeDefault.css" rel="stylesheet" />
-    <script type="text/javascript" src="../js/shInsert.js"></script>
+    <script type="text/javascript" src="../lib/prettify-latest/prettify.js"></script>
+    <link href="../lib/prettify-latest/prettify-sunburst.css" type="text/css" rel="stylesheet" />
   </head>
   <body id="project_1_elements">
     <h1>
@@ -192,8 +188,7 @@
     <hr />
     <h2>Formularze</h2>
     <h3>Formularz z paroma typami tagów <code>&lt;input&gt;</code></h3>
-    <form action="elements.html" id="contact" method="get" name="contact"
-      onreset="if (!confirm('Czy na pewno chcesz zresetować cały formularz?')) return false">
+    <form action="elements.html" id="contact" method="get" name="contact" onreset="if (!confirm('Czy na pewno chcesz zresetować cały formularz?')) return false">
       <fieldset>
         <legend>Dane studenta:</legend>
         <div>
@@ -238,17 +233,28 @@
       </div>
     </form>
     <hr />
-    <h2>Walidacje</h2>
-    <p>
-      Otwierają się w nowych oknach. Dokument <strong>nie</strong> jest zgodny
-      z zadeklarowanym <code>DOCTYPE</code>. Ma prezentować elementy
-      <code>HTML</code> opisane na wykładzie, z których część nie należy do
-      standardu.
-    </p>
-    <ul id="validations">
-      <!-- referer: http://volt.iem.pw.edu.pl/~cudzilot/pi/cw1/elements.html -->
-      <li><a href="http://validator.w3.org/check?uri=http://volt.iem.pw.edu.pl/~cudzilot/pi/cw1/elements.html" target="_blank"><img alt="Valid XHTML 1.0 Strict" src="http://www.w3.org/Icons/valid-xhtml10" style="border: 0; height: 31px; width: 88px;" /></a></li>
-      <li><a href="http://jigsaw.w3.org/css-validator/validator?uri=http%3A%2F%2Fvolt.iem.pw.edu.pl%2F%7Ecudzilot%2Fpi%2Fcw1%2Felements.html" target="_blank"><img alt="Valid CSS!" src="http://jigsaw.w3.org/css-validator/images/vcss" style="border: 0; height: 31px; width: 88px;" /></a></li>
-    </ul>
+    <div id="validations">
+      <h2>Walidacje:</h2>
+      <p>
+        Otwierają się w nowych oknach. Dokument <strong>nie</strong> jest zgodny
+        z zadeklarowanym <code>DOCTYPE</code>. Ma prezentować elementy
+        <code>HTML</code> opisane na wykładzie, z których część nie należy do
+        standardu.
+      </p>
+      <ul>
+        <li id="html_validation">
+          <a href="#">
+            <img alt="Valid XHTML 1.0 Strict" src="../img/valid-xhtml-1.0.png" style="border: 0; height: 31px; width: 88px;" />
+          </a>
+        </li>
+        <li id="css_validation">
+          <a href="#">
+            <img alt="Valid CSS!" src="../img/valid-css.gif" style="border: 0; height: 31px; width: 88px;" />
+          </a>
+        </li>
+      </ul>
+    </div>
+    <script type="text/javascript" src="../js/insert-validations.js"></script>
+    <script type="text/javascript" src="../js/insert-source.js"></script>
   </body>
 </html>

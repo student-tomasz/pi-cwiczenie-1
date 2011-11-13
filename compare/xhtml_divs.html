@@ -6,8 +6,8 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta http-equiv="Content-Language" content="pl" />
     <meta name="Description" content="Porównanie HTML 4.01 do XHTML 1.0 --
-    layout z użyciem &lt;div&gt;, w DOCTYPE XHTML 1.0 Strict. Projekt do
-    ćwiczenia 1 z laborek Programowanie internetowe 2011/2012." />
+      layout z użyciem &lt;div&gt;, w DOCTYPE XHTML 1.0 Strict. Projekt do
+      ćwiczenia 1 z laborek Programowanie internetowe 2011/2012." />
     <meta name="Author" content="cudzilot" />
 
     <title>
@@ -16,16 +16,18 @@
       Porównanie XHTML 1.0 do HTML 4.01
     </title>
 
-    <link rel="home" title="Strona główna ćwiczenia" href="index.html" />
-    <link rel="index" title="Spis projektów" href="../index.html" />
+    <link rel="index" title="Strona z projektami z laboratoriów Programowanie
+      internetowe" href="/~cudzilot/pi/" />
+    <link rel="home" title="Strona główna projektu do ćwiczenia 1"
+      href="/~cudzilot/pi/cw1/" />
 
-    <link href="../css/style.css" rel="stylesheet" type="text/css" media="all" />
-    <link href="css/compare.css" rel="stylesheet" type="text/css" media="all" />
-    <link href="../favicon.ico" rel="shortcut icon" type="image/ico" />
+    <link href="../shared/stylesheets/style.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="../stylesheets/compare.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="../shared/favicon.ico" rel="shortcut icon" type="image/ico" />
 
-    <script type="text/javascript" src="../lib/jquery-latest.min.js"></script>
-    <script type="text/javascript" src="../lib/prettify-latest/prettify.js"></script>
-    <link href="../lib/prettify-latest/prettify.css" type="text/css" rel="stylesheet" />
+    <script src="../shared/vendor/jquery-latest.min.js" type="text/javascript"></script>
+    <script src="../shared/vendor/prettify-latest/prettify.js" type="text/javascript"></script>
+    <link href="../shared/vendor/prettify-latest/prettify.css" rel="stylesheet" type="text/css" />
   </head>
   <body id="project_1_compare_xhtml_divs" class="project_1_compare">
     <div id="wrapper">
@@ -65,11 +67,11 @@ ale nie XHTML 1.0
               <code>&lt;body&gt;</code> oraz dokładnie jeden korzeń typu
               <code>&lt;html&gt;</code>.
             </p>
-            <img alt="Drzewo prostego dokumentu XHTML." src="img/tree.gif" />
+            <img alt="Drzewo prostego dokumentu XHTML." src="../images/tree.gif" />
           </div>
 
           <div id="namespace" class="section">
-            <img alt="Przykład tagu z atrybutem xmlns." src="img/namespace.png" />
+            <img alt="Przykład tagu z atrybutem xmlns." src="../images/namespace.png" />
             <h3>Obowiązkowa deklaracja przestrzeni nazw</h3>
             <p>
               <code>XHTML</code> wymaga obecności atrybutu <code>xmlns</code> w
@@ -81,7 +83,7 @@ ale nie XHTML 1.0
           </div>
 
           <div id="case" class="section">
-            <img alt="Te literki są różnych wielkości." src="img/case.png" />
+            <img alt="Te literki są różnych wielkości." src="../images/case.png" />
             <h3>Czułość na wielkość znaków</h3>
             <p>
               Ponieważ <code>XML</code> jest czuły na wielkość znaków tagi w
@@ -96,7 +98,7 @@ ale nie XHTML 1.0
           </div>
 
           <div id="close_tags" class="section">
-            <img alt="Zdjęcie wydrukowanego HTMLa." src="img/close_tags.jpg" />
+            <img alt="Zdjęcie wydrukowanego HTMLa." src="../images/close_tags.jpg" />
             <h3>Zamykanie tagów</h3>
             <p>
               W <code>XHTML</code> wszystkie tagi muszą być zamykane. W <code>HTML
@@ -183,19 +185,19 @@ ale nie XHTML 1.0
           <ul>
             <li id="html_validation">
               <a href="#">
-                <img alt="Valid XHTML 1.0 Strict" src="../img/valid-xhtml-1.0.png" style="border: 0; height: 31px; width: 88px;" />
+                <img alt="Valid XHTML 1.0 Strict" src="../shared/images/valid-xhtml-1.0.png" style="border: 0; height: 31px; width: 88px;" />
               </a>
             </li>
             <li id="css_validation">
               <a href="#">
-                <img alt="Valid CSS!" src="../img/valid-css.gif" style="border: 0; height: 31px; width: 88px;" />
+                <img alt="Valid CSS!" src="../shared/images/valid-css.gif" style="border: 0; height: 31px; width: 88px;" />
               </a>
             </li>
           </ul>
         </div>
       </div>
     </div>
-    <script type="text/javascript" src="../js/insert-validations.js"></script>
-    <script type="text/javascript" src="../js/insert-source.js"></script>
+    <script type="text/javascript" src="../shared/javascripts/insert-validations.js"></script>
+    <script type="text/javascript" src="../shared/javascripts/insert-source.js"></script>
   </body>
 </html>
